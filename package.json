@@ -1,6 +1,6 @@
 {
   "name": "confetti-react",
-  "version": "2.4.3",
+"version": "2.4.3",
   "description": "React component to draw confetti for your party.",
   "browser": "dist/formsy-react.umd.js",
   "main": "dist/confetti-react.min.js",
