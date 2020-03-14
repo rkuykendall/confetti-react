@@ -1,12 +1,12 @@
 import React from 'react'
 import useWindowSize from 'react-use/lib/useWindowSize'
 
-import ReactConfetti from '../src/ReactConfetti'
+import ConfettiReact from '../src/ConfettiReact'
 
 export default React.forwardRef((passedProps, ref) => {
   const { width, height } = useWindowSize()
   return (
-    <ReactConfetti
+    <ConfettiReact
       width={width}
       height={height}
       {...passedProps}

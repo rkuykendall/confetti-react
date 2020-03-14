@@ -6,7 +6,7 @@ import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 import { action } from '@storybook/addon-actions'
 
-import ReactConfetti from '../src/ReactConfetti'
+import ConfettiReact from '../src/ConfettiReact'
 
 const PointConfetti = (passedProps) => {
   const { width, height } = useWindowSize()
@@ -120,6 +120,6 @@ storiesOf('Props|Demos', module)
 
 storiesOf('Props|Default', module)
   .addDecorator(withInfo)
-  .add('Default', () => <ReactConfetti />, {
+  .add('Default', () => <ConfettiReact />, {
     notes: 'Bare bones basic usage with no resizing.',
   })

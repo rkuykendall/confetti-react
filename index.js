@@ -1,1 +1,1 @@
-module.exports = require('./dist/react-confetti.js')
+module.exports = require('./dist/confetti-react.js')

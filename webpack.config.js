@@ -4,12 +4,12 @@ const base = {
   mode: 'development',
   devtool: 'source-map',
   entry: {
-    'react-confetti': ['./src/ReactConfetti.tsx'],
+    'confetti-react': ['./src/ConfettiReact.tsx'],
   },
   output: {
     path: path.join(__dirname, 'dist'),
     filename: '[name].js',
-    library: 'ReactConfetti',
+    library: 'ConfettiReact',
     libraryTarget: 'umd',
     libraryExport: 'default',
     globalObject: 'typeof self !== "undefined" ? self : this',

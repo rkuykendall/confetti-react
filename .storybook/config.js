@@ -6,7 +6,7 @@ addParameters({
     theme: create({
       base: 'light',
       brandTitle: 'React Confetti',
-      brandUrl: 'https://github.com/alampros/react-confetti',
+      brandUrl: 'https://github.com/rkuykendall/confetti-react',
     }),
   },
 })

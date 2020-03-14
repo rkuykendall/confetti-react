@@ -5,12 +5,12 @@ const ref = React.createRef<HTMLCanvasElement>()
 
 export type Props = Partial<IConfettiOptions> & CanvasHTMLAttributes<HTMLCanvasElement> & { canvasRef?: React.Ref<HTMLCanvasElement> }
 
-class ReactConfettiInternal extends Component<Props> {
+class ConfettiReactInternal extends Component<Props> {
   static readonly defaultProps = {
     ...confettiDefaults,
   }
 
-  static readonly displayName = 'ReactConfetti'
+  static readonly displayName = 'ConfettiReact'
 
   constructor(props: Props, ...rest: any[]) {
     super(props, ...rest)
@@ -88,8 +88,8 @@ function extractCanvasProps(props: Partial<IConfettiOptions> | any): [Partial<IC
   return [confettiOptions, rest, refs]
 }
 
-export const ReactConfetti = React.forwardRef<HTMLCanvasElement, Props>((props, ref) => (
-  <ReactConfettiInternal canvasRef={ref} {...props} />
+export const ConfettiReact = React.forwardRef<HTMLCanvasElement, Props>((props, ref) => (
+  <ConfettiReactInternal canvasRef={ref} {...props} />
 ))
 
-export default ReactConfetti
+export default ConfettiReact
