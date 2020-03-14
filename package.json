@@ -32,19 +32,15 @@
     "build:clean": "rm -r dist/* || true",
     "build:js": "rollup -c",
     "build:types": "tsc --emitDeclarationOnly",
-    "clean": "git clean -xfd dist/",
-    "cleanall": "git clean -xfd .",
     "deploy": "np",
     "docs:build": "build-storybook -s ./.storybook/public",
     "docs:watch": "start-storybook -p 3000",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md}\"",
     "lint": "eslint .",
-    "prebuild": "yarn clean",
-    "prepare": "yarn run lint",
+    "prepare": "npm run lint",
     "semantic-release": "semantic-release",
-    "test": "tsc; yarn run lint",
-    "version": "npm run build && git add dist",
-    "watch": "webpack --watch"
+    "test": "tsc; npm run lint",
+    "version": "npm run build && git add dist"
   },
   "peerDependencies": {
     "react": "^16.3.0"
