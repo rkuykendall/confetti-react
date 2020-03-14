@@ -1,25 +1,25 @@
 {
-  "name": "react-confetti",
+  "name": "confetti-react",
   "version": "2.4.1",
   "description": "React component to draw confetti for your party.",
-  "main": "dist/react-confetti.min.js",
-  "types": "dist/types/ReactConfetti.d.ts",
+  "main": "dist/confetti-react.min.js",
+  "types": "dist/types/ConfettiReact.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/alampros/react-confetti.git"
+    "url": "https://github.com/rkuykendall/confetti-react.git"
   },
   "keywords": [
-    "react",
-    "confetti",
     "component",
+    "confetti",
+    "react",
     "react-component"
   ],
-  "author": "Aaron Lampros <alampros@gmail.com>",
+  "author": "Gthibaud, Aaron Lampros, Robert Kuykendall",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alampros/react-confetti/issues"
+    "url": "https://github.com/rkuykendall/confetti-react/issues"
   },
-  "homepage": "https://github.com/alampros/react-confetti#readme",
+  "homepage": "https://github.com/rkuykendall/confetti-react#readme",
   "files": [
     "README.md",
     "LICENSE.md",
@@ -47,6 +47,8 @@
     "react": "^16.3.0"
   },
   "dependencies": {
+    "np": "^6.2.0",
+    "rollup": "^2.0.6",
     "tween-functions": "^1.2.0"
   },
   "devDependencies": {
