@@ -1,4 +1,5 @@
-const path = require('path')
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const path = require('path');
 
 const base = {
   mode: 'development',
@@ -34,7 +35,7 @@ const base = {
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
-}
+};
 
 module.exports = [
   base,
@@ -46,4 +47,4 @@ module.exports = [
       filename: '[name].min.js',
     },
   },
-]
+];

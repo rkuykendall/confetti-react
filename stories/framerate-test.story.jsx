@@ -1,9 +1,9 @@
-import React from 'react'
-import { storiesOf } from '@storybook/react'
-import { withKnobs, boolean, number } from '@storybook/addon-knobs'
-import FPSStats from 'react-fps-stats'
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { withKnobs, boolean, number } from '@storybook/addon-knobs';
+import FPSStats from 'react-fps-stats';
 
-import SizedConfetti from './SizedConfetti'
+import SizedConfetti from './SizedConfetti';
 
 storiesOf('Tests|Performance', module)
   .addDecorator(withKnobs)
@@ -32,13 +32,15 @@ storiesOf('Tests|Performance', module)
           max: 1,
           step: 0.01,
         })}
-        opacity={number('Opacity', 100, {
-          range: true,
-          min: 0,
-          max: 100,
-          step: 1,
-        }) / 100}
+        opacity={
+          number('Opacity', 100, {
+            range: true,
+            min: 0,
+            max: 100,
+            step: 1,
+          }) / 100
+        }
       />
       <FPSStats right={0} left="auto" />
     </div>
-  ))
+  ));

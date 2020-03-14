@@ -1,6 +1,6 @@
-export interface IRect {
-  x: number
-  y: number
-  w: number
-  h: number
+export interface Rect {
+  h: number;
+  w: number;
+  x: number;
+  y: number;
 }

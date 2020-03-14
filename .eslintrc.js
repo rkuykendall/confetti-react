@@ -1,65 +1,48 @@
 module.exports = {
-  root: true,
   extends: [
-    'standard',
-    'standard-react',
+    'airbnb',
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'prettier/@typescript-eslint',
+    'plugin:prettier/recommended',
   ],
   env: {
     browser: true,
-    node: true,
+    jasmine: true,
+    jest: true,
   },
-  plugins: [
-    'react',
-    'react-hooks',
-  ],
-  overrides: [
-    {
-      files: ['**/*.js'],
-      parser: 'babel-eslint',
-    },
-    {
-      files: ['**/*.ts', '**/*.tsx'],
-      parser: '@typescript-eslint/parser',
-      plugins: ['@typescript-eslint'],
-      rules: {
-        'no-unused-vars': 'off',
-        '@typescript-eslint/no-unused-vars': ['error', {
-          vars: 'all',
-          args: 'after-used',
-          ignoreRestSiblings: false,
-        }],
-      },
-    },
-  ],
+  plugins: ['@typescript-eslint', 'prettier', 'react'],
+  ignorePatterns: ['dist/', 'node_modules/', 'coverage/'],
   rules: {
-    'no-console': ['warn', { allow: ['warn', 'error'] }],
-    'quote-props': ['error', 'as-needed'],
-    'comma-dangle': ['warn', {
-      arrays: 'only-multiline',
-      objects: 'always-multiline',
-      imports: 'only-multiline',
-    }],
-    quotes: ['warn', 'single'],
-    'space-before-function-paren': ['error', {
-      anonymous: 'never',
-      named: 'never',
-      asyncArrow: 'always',
-    }],
-    'jsx-quotes': ['error', 'prefer-double'],
-    'react-hooks/rules-of-hooks': 'error',
-    'react/jsx-closing-tag-location': 2,
-    'react/jsx-closing-bracket-location': 2,
-    'react/jsx-indent': [2, 2, { checkAttributes: true }],
-    'react/jsx-max-props-per-line': ['error', { maximum: 1, when: 'multiline' }],
-    'react/prop-types': ['error', { ignore: ['children', 'className', 'style'] }],
-    'keyword-spacing': ['error', {
-      overrides: {
-        if: { after: false },
-        for: { after: false },
-        while: { after: false },
-        catch: { after: false },
-        switch: { after: false },
-      },
-    }],
+    '@typescript-eslint/explicit-function-return-type': 0,
+    '@typescript-eslint/no-explicit-any': 0,
+    'import/extensions': 0,
+    'import/no-extraneous-dependencies': ['error', {devDependencies: [
+      '.storybook/*',
+      '.storybook/config.js',
+      '__test_utils__/*',
+      '__tests__/*',
+      'rollup.config.js',
+      'setupTests.ts',
+    ]},],
+    'no-underscore-dangle': 0,
+    'prettier/prettier': ['error', { singleQuote: true }],
+    'react/forbid-prop-types': 0,
+    'react/jsx-filename-extension': 0,
+    'react/jsx-props-no-spreading': 0,
+    'react/static-property-placement': 0,
   },
-}
+  settings: {
+    react: {
+      pragma: 'React',
+      version: 'detect',
+    },
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
+  },
+  parser: '@typescript-eslint/parser',
+};
