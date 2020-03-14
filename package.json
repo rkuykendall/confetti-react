@@ -28,20 +28,21 @@
   ],
   "scripts": {
     "build": "yarn build-types && yarn build-transpile && yarn build-bundle",
-    "build-types": "tsc",
-    "build-transpile": "babel src --out-dir dist --extensions \".ts\"",
     "build-bundle": "webpack",
     "build-storybook": "build-storybook -s ./.storybook/public",
-    "prebuild": "yarn clean",
-    "watch": "webpack --watch",
-    "test": "tsc; yarn run lint",
+    "build-transpile": "babel src --out-dir dist --extensions \".ts\"",
+    "build-types": "tsc",
     "clean": "git clean -xfd dist/",
     "cleanall": "git clean -xfd .",
+    "commit": "git-cz",
+    "deploy": "np",
+    "develop": "start-storybook -p 3000",
     "lint": "eslint . --ext .js --ext .ts --ext .tsx",
+    "prebuild": "yarn clean",
     "prepare": "yarn run lint && yarn run build",
     "semantic-release": "semantic-release",
-    "commit": "git-cz",
-    "develop": "start-storybook -p 3000"
+    "test": "tsc; yarn run lint",
+    "watch": "webpack --watch"
   },
   "peerDependencies": {
     "react": "^16.3.0"
