@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import ConfettiReact from '../src/ConfettiReact';
+import Index from '../src';
 
 const Toggler = ({ children }) => {
   const [isVisible, setVisible] = useState(true);
@@ -24,7 +24,7 @@ const Toggler = ({ children }) => {
 storiesOf('Tests|Lifecycle', module).add('Cleanup on mount', () => (
   <div>
     <Toggler>
-      <ConfettiReact style={{ zIndex: 0 }} />
+      <Index style={{ zIndex: 0 }} />
     </Toggler>
   </div>
 ));
