@@ -1,4 +1,4 @@
-module.exports = ({ config, mode }) => {
+module.exports = ({ config }) => {
   config.module.rules.push({
     test: /\.tsx?$/,
     use: ['babel-loader', 'react-docgen-typescript-loader'],

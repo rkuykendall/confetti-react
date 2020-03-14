@@ -18,7 +18,7 @@ function extractCanvasProps(
   Object.keys(props).forEach(prop => {
     const val = props[prop as string];
     if (confettiOptionKeys.includes(prop)) {
-      confettiOptions[prop as keyof ConfettiOptions] = val;
+      confettiOptions[prop] = val;
     } else if (refProps.includes(prop)) {
       refProps[prop as any] = val;
     } else {
@@ -95,8 +95,8 @@ class ConfettiReactInternal extends Component<Props> {
 }
 
 // eslint-disable-next-line react/display-name
-export const ConfettiReact = React.forwardRef<HTMLCanvasElement, Props>((props, _ref) => (
+export const Index = React.forwardRef<HTMLCanvasElement, Props>((props, _ref) => (
   <ConfettiReactInternal canvasRef={ref} {...props} />
 ));
 
-export default ConfettiReact;
+export default Index;

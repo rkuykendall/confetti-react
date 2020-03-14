@@ -1,6 +1,6 @@
 # confetti-react
 
-Confetti without the cleanup. [Demo](http://alampros.github.io/confetti-react/)
+Confetti without the cleanup. [Demo](http://rkuykendall.github.io/confetti-react/)
 
 [![Build Status](https://travis-ci.org/rkuykendall/confetti-react.svg?branch=master)](https://travis-ci.org/rkuykendall/confetti-react)
 [![npm](https://img.shields.io/npm/v/confetti-react.svg)](https://www.npmjs.com/package/confetti-react)
@@ -11,8 +11,8 @@ Based on a pen by @Gthibaud: https://codepen.io/Gthibaud/pen/ENzXbp
 
 [![demogif][2]][1]
 
-[1]: http://alampros.github.com/confetti-react
-[2]: http://alampros.github.io/confetti-react/confetti-demo-anim.gif 'demo gif'
+[1]: http://rkuykendall.github.com/confetti-react
+[2]: http://rkuykendall.github.io/confetti-react/confetti-demo-anim.gif 'demo gif'
 
 ## Install
 
