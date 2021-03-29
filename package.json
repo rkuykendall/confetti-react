@@ -43,7 +43,7 @@
     "version": "npm run build && git add dist"
   },
   "peerDependencies": {
-    "react": "^16.3.0"
+    "react": "^16.3.0 || ^17.0.0"
   },
   "dependencies": {
     "tween-functions": "^1.2.0"
