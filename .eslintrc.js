@@ -19,8 +19,6 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 0,
     'import/extensions': 0,
     'import/no-extraneous-dependencies': ['error', {devDependencies: [
-      '.storybook/*',
-      '.storybook/config.js',
       '__test_utils__/*',
       '__tests__/*',
       'rollup.config.js',

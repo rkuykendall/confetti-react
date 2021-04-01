@@ -4,7 +4,7 @@ This is a fork of [react-confetti](https://github.com/alampros/react-confetti) f
 
 # confetti-react
 
-Confetti without the cleanup. [Demo](http://rkuykendall.github.io/confetti-react/)
+Confetti without the cleanup.
 
 [![Build Status](https://travis-ci.org/rkuykendall/confetti-react.svg?branch=master)](https://travis-ci.org/rkuykendall/confetti-react)
 [![npm](https://img.shields.io/npm/v/confetti-react.svg)](https://www.npmjs.com/package/confetti-react)
