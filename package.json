@@ -1,6 +1,6 @@
 {
   "name": "confetti-react",
-  "version": "2.4.3",
+  "version": "2.5.0",
   "description": "React component to draw confetti for your party.",
   "main": "dist/index.js",
   "module": "dist/confetti-react.esm.js",
