@@ -1,3 +1,7 @@
+# This is a fork
+
+This is a fork of [react-confetti](https://github.com/alampros/react-confetti) from a time when the library was unsupported and the latest release was completely broken. It is my understanding that the original library is once again actively maintained.
+
 # confetti-react
 
 Confetti without the cleanup. [Demo](http://rkuykendall.github.io/confetti-react/)
@@ -12,7 +16,7 @@ Based on a pen by @Gthibaud: https://codepen.io/Gthibaud/pen/ENzXbp
 [![demogif][2]][1]
 
 [1]: http://rkuykendall.github.com/confetti-react
-[2]: http://rkuykendall.github.io/confetti-react/confetti-demo-anim.gif 'demo gif'
+[2]: https://user-images.githubusercontent.com/796717/113315634-7d24f800-92db-11eb-9a01-4c83413a5756.png 'demo gif'
 
 ## Install
 
