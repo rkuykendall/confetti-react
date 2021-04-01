@@ -2,10 +2,9 @@
   "name": "confetti-react",
   "version": "2.4.3",
   "description": "React component to draw confetti for your party.",
-  "browser": "dist/formsy-react.umd.js",
-  "main": "dist/confetti-react.min.js",
+  "main": "dist/index.js",
   "module": "dist/confetti-react.esm.js",
-  "types": "dist/index.d.ts",
+  "typings": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/rkuykendall/confetti-react.git"
@@ -28,17 +27,22 @@
     "dist"
   ],
   "scripts": {
-    "build": "npm run build:clean && npm run build:types && npm run build:js",
-    "build:clean": "rm -r dist/* || true",
-    "build:js": "rollup -c",
-    "build:types": "tsc --emitDeclarationOnly",
+    "build": "tsdx build",
     "deploy": "np",
-    "format": "tsdx lint --fix",
+    "format": "tsdx lint src --fix",
     "lint": "tsdx lint src",
-    "prepare": "npm run lint",
-    "semantic-release": "semantic-release",
-    "test": "tsc; npm run lint",
+    "prepublishOnly": "tsdx build",
+    "preversion": "npm run lint",
+    "start": "tsdx watch",
+    "test": "npm run lint",
     "version": "npm run build && git add dist"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "proseWrap": "always",
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "all"
   },
   "peerDependencies": {
     "react": "^16.3.0 || ^17.0.0"
@@ -47,40 +51,12 @@
     "tween-functions": "^1.2.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.8.7",
-    "@babel/plugin-proposal-class-properties": "^7.8.3",
-    "@babel/preset-env": "^7.8.7",
-    "@babel/preset-react": "^7.8.3",
-    "@babel/preset-typescript": "^7.8.3",
-    "@rollup/plugin-commonjs": "^11.0.2",
-    "@rollup/plugin-node-resolve": "^7.1.1",
     "@types/react": "^16.9.23",
-    "babel-loader": "^8.0.5",
-    "babelrc-rollup": "^3.0.0",
     "np": "^5.0.0",
     "prettier": "^1.19.1",
     "react": "^16.3.0",
     "react-dom": "^16.3.0",
-    "rollup": "^2.0.6",
-    "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-peer-deps-external": "^2.2.2",
     "tsdx": "^0.14.1",
     "typescript": "^3.3.3333"
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
-  },
-  "release": {
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/changelog",
-      "@semantic-release/npm",
-      "@semantic-release/git",
-      "@semantic-release/github"
-    ]
   }
 }

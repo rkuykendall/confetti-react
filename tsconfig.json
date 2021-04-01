@@ -1,14 +1,30 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
     "declaration": true,
     "esModuleInterop": true,
-    "lib": ["dom", "es5", "es6", "es7", "es2017.object"],
-    "module": "commonjs",
-    "moduleResolution": "node",    "jsx": "react",
-    "outDir": "dist",
-    "sourceMap": true,
-    "target": "esnext"
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "jsx": "react",
+    "lib": ["dom", "esnext"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "./build",
+    "paths": { "*": ["src/*", "node_modules/*"] },
+    "rootDir": "./src",
+    "sourceMap": true
   },
-  "exclude": ["node_modules", "dist", "coverage"],
-  "include": ["src"]
+  "exclude": [
+    "test",
+    "build",
+    "coverage",
+    "node_modules"
+  ],
+  "include": [
+    "src"
+  ]
 }

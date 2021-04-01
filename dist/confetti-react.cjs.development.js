@@ -1,5 +1,12 @@
-import React, { Component } from 'react';
-import tweens from 'tween-functions';
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
+
+var React = require('react');
+var React__default = _interopDefault(React);
+var tweens = _interopDefault(require('tween-functions'));
 
 function _defineProperties(target, props) {
   for (var i = 0; i < props.length; i++) {
@@ -397,7 +404,7 @@ var Confetti = /*#__PURE__*/function () {
   return Confetti;
 }();
 
-var ref = /*#__PURE__*/React.createRef();
+var ref = /*#__PURE__*/React__default.createRef();
 
 function extractCanvasProps(props) {
   var confettiOptions = {};
@@ -430,7 +437,7 @@ var ConfettiReactInternal = /*#__PURE__*/function (_Component) {
     }
 
     _this = _Component.call.apply(_Component, [this, props].concat(rest)) || this;
-    _this.canvas = React.createRef();
+    _this.canvas = React__default.createRef();
     _this.canvas = props.canvasRef || ref;
     return _this;
   }
@@ -475,7 +482,7 @@ var ConfettiReactInternal = /*#__PURE__*/function (_Component) {
       right: 0
     }, passedProps.style);
 
-    return React.createElement("canvas", Object.assign({
+    return React__default.createElement("canvas", Object.assign({
       width: confettiOptions.width,
       height: confettiOptions.height,
       ref: this.canvas
@@ -485,17 +492,17 @@ var ConfettiReactInternal = /*#__PURE__*/function (_Component) {
   };
 
   return ConfettiReactInternal;
-}(Component);
+}(React.Component);
 
 ConfettiReactInternal.defaultProps = /*#__PURE__*/_extends({}, confettiDefaults);
 ConfettiReactInternal.displayName = 'ConfettiReact'; // eslint-disable-next-line react/display-name
 
-var Index = /*#__PURE__*/React.forwardRef(function (props, _ref) {
-  return React.createElement(ConfettiReactInternal, Object.assign({
+var Index = /*#__PURE__*/React__default.forwardRef(function (props, _ref) {
+  return React__default.createElement(ConfettiReactInternal, Object.assign({
     canvasRef: ref
   }, props));
 });
 
-export default Index;
-export { Index };
-//# sourceMappingURL=confetti-react.esm.js.map
+exports.Index = Index;
+exports.default = Index;
+//# sourceMappingURL=confetti-react.cjs.development.js.map
