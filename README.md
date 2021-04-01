@@ -1,6 +1,8 @@
-# This is a fork
+# This is a maintained fork
 
-This is a fork of [react-confetti](https://github.com/alampros/react-confetti) from a time when the library was unsupported and the latest release was completely broken. It is my understanding that the original library is once again actively maintained.
+This is a fork of [react-confetti](https://github.com/alampros/react-confetti) which was created when that library was unsupported and the latest release was completely broken. It is my understanding that the original library is once again actively maintained.
+
+For live examples and demo's of this code, you can reference the [react-confetti live documentation](https://alampros.github.io/react-confetti/).
 
 # confetti-react
 
