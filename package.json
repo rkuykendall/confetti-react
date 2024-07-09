@@ -45,7 +45,7 @@
     "trailingComma": "all"
   },
   "peerDependencies": {
-    "react": "^16.3.0 || ^17.0.0"
+    "react": "^16.3.0 || ^17.0.0 || ^18.3.1"
   },
   "dependencies": {
     "tween-functions": "^1.2.0"
