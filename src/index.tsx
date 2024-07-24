@@ -44,8 +44,8 @@ class ConfettiReactInternal extends Component<Props> {
 
   confetti?: Confetti;
 
-  constructor(props: Props, ...rest: any[]) {
-    super(props, ...rest);
+  constructor(props: Props) {
+    super(props);
     this.canvas = (props.canvasRef as React.RefObject<HTMLCanvasElement>) || ref;
   }
 
